@@ -4,35 +4,55 @@
 <html>
     <body>
         <script>
-            number =954
+            number =990
  str=""
     hundreds=Math.trunc(number/100)
     dozens=Math.trunc((number-hundreds*100)/10)
     units = number-hundreds*100-dozens*10
 
-    console.log(hundreds)
-    console.log(dozens)
-    console.log(units)
 
- if(number ===0)
-  {
-      str+="zero"
-      console.log(str)
-  }
+  console.log(Number(hundreds)+" hundred "+Number(dozens)+"ty "+Number(units))
 
 
-  if(hundreds===9)
-  {
-      str+="nine hundred "
-  }
-
-  if(dozens=0)
-{
-
-}
 
 
-  console.log(str)
+  function Number(num) {
+      str=""
+    switch(num) {
+
+        case 9:  
+            str+="nine"  
+        break;
+        case 8: 
+            str+="eight"        
+        break;
+        case 7:  
+            str+="seven"        
+        break;
+        case 6:  
+            str+="six"        
+        break;
+        case 5:  
+            str+="five"        
+        break;
+        case 4:  
+            str+="four"        
+        break;
+        case 3:  
+            str+="three"        
+        break;
+        case 2:  
+            str+="two"        
+        break;
+        case 1:  
+            str+="one"        
+        break;        
+        default: break;
+       
+        }
+    return str
+    }
+
        </script>
     </body>
 </html>
