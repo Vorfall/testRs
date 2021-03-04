@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+   const matrix = [
+        [1, 2, 4],
+        [5, 6, 7, 8],
+        [9, 12],
+    ];
+
+/* str = matrix.join()
+  arr = str.split(',')
+  for(i=0;i<arr.length;i++)
+  {
+    arr[i] = parseInt(arr[i])
+  }
+ 
+*/
+count=0
+arr=[]
+
+
+console.log(matrix.length)
+
+for(i=0;i<matrix.length;i++)
+{
+console.log(matrix[i].length)
+}
+
+tmp2=matrix[0][0]
+tmpReverse=0
+
+for(i=0;i<matrix.length;i++)
+{
+    tmp=matrix[i].length
+   
+    for(j=0;j<tmp;j++)
+    {
+       // console.log("i="+i+"j="+j)
+        tmp2=matrix[i][j]
+        tmpReverse=matrix[i][tmp-j-1]
+    if(i%2===1){
+        arr.push(matrix[i][tmp-j-1]);
+    }
+    else {
+        arr.push(matrix[i][j]);
+    }
+
+    count++
+  //  console.log("count="+count)
+}
+}
+
+
+           console.log(arr)
+       </script>
+    </body>
+</html>
