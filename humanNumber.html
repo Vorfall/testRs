@@ -4,100 +4,147 @@
 <html>
     <body>
         <script>
-            number =719
- str=""
-    hundreds=Math.trunc(number/100)
-    dozens=Math.trunc((number-hundreds*100)/10)
-    units = number-hundreds*100-dozens*10
+            number =999
 
- if(dozens !=1 )
- {
-    console.log(Number(hundreds)+" hundred "+Number(dozens)+"ty "+Number(units))    
- }
- else{
-        if(units===0)
-        {
-            console.log(Number(hundreds)+" hundred ten")    
-        }
-        if(units===1)
-        {
-            console.log(Number(hundreds)+" hundred eleven")    
-        }
-        if(units===2)
-        {
-            console.log(Number(hundreds)+" hundred twelve")    
-        }
-        if(units===3)
-        {
-            console.log(Number(hundreds)+" hundred thirteen")    
-        }
-        if(units===4)
-        {
-            console.log(Number(hundreds)+" hundred fourteen")    
-        }
-        if(units===5)
-        {
-            console.log(Number(hundreds)+" hundred fifteen")    
-        }
-        if(units===6)
-        {
-            console.log(Number(hundreds)+" hundred sixteen")    
-        }
-        if(units===7)
-        {
-            console.log(Number(hundreds)+" hundred seventeen")    
-        }
-        if(units===8)
-        {
-            console.log(Number(hundreds)+" hundred eighteen")    
-        }
-        if(units===9)
-        {
-            console.log(Number(hundreds)+" hundred nineteen")    
-        }
-       
-      
- }
+   
+str=""
+hundreds=Math.trunc(number/100)
+dozens=Math.trunc((number-hundreds*100)/10)
+units = number-hundreds*100-dozens*10
 
-
-
-
-  function Number(num) {
-      str=""
-    switch(num) {
-
-        case 9:  
-            str+="nine"  
-        break;
-        case 8: 
-            str+="eight"        
-        break;
-        case 7:  
-            str+="seven"        
-        break;
-        case 6:  
-            str+="six"        
-        break;
-        case 5:  
-            str+="five"        
-        break;
-        case 4:  
-            str+="four"        
-        break;
-        case 3:  
-            str+="three"        
-        break;
-        case 2:  
-            str+="two"        
-        break;
-        case 1:  
-            str+="one"        
-        break;        
-        default: break;
-       
-        }
-    return str
+if(dozens !=1 )
+{
+str = Number(hundreds)+"hundred_"+NumberDozens(dozens)+"ty_"+Number(units)    
+}
+else{
+    if(units===0)
+    {
+        str = Number(hundreds)+"_hundred_ten"   
     }
+    if(units===1)
+    {
+        str = Number(hundreds)+"_hundred_eleven"    
+    }
+    if(units===2)
+    {
+        str = Number(hundreds)+"_hundred_twelve"  
+    }
+    if(units===3)
+    {
+        str = Number(hundreds)+"_hundred_thirteen"   
+    }
+    if(units===4)
+    {
+        str = Number(hundreds)+"_hundred_fourteen"   
+    }
+    if(units===5)
+    {
+        str = Number(hundreds)+"_hundred_fifteen"    
+    }
+    if(units===6)
+    {
+        str = Number(hundreds)+"_hundred_sixteen"   
+    }
+    if(units===7)
+    {
+        str = Number(hundreds)+"_hundred_seventeen"    
+    }
+    if(units===8)
+    {
+        str = Number(hundreds)+"_hundred_eighteen"    
+    }
+    if(units===9)
+    {
+        str = Number(hundreds)+"_hundred_nineteen"
+    }
+}
+console.log(str)
+
+
+
+
+
+function Number(num) {
+  str=""
+switch(num) {
+
+    case 9:  
+        str+="nine"  
+    break;
+    case 8: 
+        str+="eight"        
+    break;
+    case 7:  
+        str+="seven"        
+    break;
+    case 6:  
+        str+="six"        
+    break;
+    case 5:  
+        str+="five"        
+    break;
+    case 4:  
+        str+="four"        
+    break;
+    case 3:  
+        str+="three"        
+    break;
+    case 2:  
+        str+="two"        
+    break;
+    case 1:  
+        str+="one"        
+    break;        
+    default: break;
+   
+    }
+    return(str)
+   
+}
+
+
+
+
+function NumberDozens(num) {
+  str=""
+switch(num) {
+
+    case 9:  
+        str+="nine"  
+    break;
+    case 8: 
+        str+="eigh"        
+    break;
+    case 7:  
+        str+="seven"        
+    break;
+    case 6:  
+        str+="six"        
+    break;
+    case 5:  
+        str+="five"        
+    break;
+    case 4:  
+        str+="four"        
+    break;
+    case 3:  
+        str+="three"        
+    break;
+    case 2:  
+        str+="two"        
+    break;
+    case 1:  
+        str+="one"        
+    break;        
+    default: break;
+   
+    }
+    return(str)
+   
+}
+
+
+
 
        </script>
     </body>
