@@ -4,15 +4,19 @@
 <html>
     <body>
         <script>
-           members =(['Peter', 'Adam', 'Gary', 'Bobby', 'Philip', 'Andrea', 'Evelyn', 'Evelyn', 'Kimberly', 'Denise'])
-   str=""
+           members =([['David Abram'], ['Robin Attfield'],'Thomas Berry',['Paul R.Ehrlich'],'donna Haraway',' BrIaN_gOodWiN  ', {0: 'Serenella Iovino' },'Erazim Kohak','  val_plumwood',])
+           str=""
   for(i=0;i<members.length;i++)
   {
     str+=members[i][0]
   }
-  str=str.toUpperCase()
-  str.sort()
-  console.log( str)
+  str.toUpperCase()
+  arr=str.split("")
+  
+  
+  //arr.sort()
+  str=arr.join('-')
+  console.log(str)
 
 
        </script>
